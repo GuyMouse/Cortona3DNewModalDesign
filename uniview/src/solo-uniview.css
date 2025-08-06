@@ -1,0 +1,172 @@
+.skin-toolbar {
+    background: #20262d !important;
+}
+#toolbar-navigation {
+    position: relative;
+}
+#toolbar-navigation:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #20262d;
+}
+.skin-holder-view {
+    flex-wrap: wrap;
+    padding: 1em;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+
+.skin-holder-app {
+    flex-flow: column;
+    font-size: 14px;
+}
+
+.skin-holder-app.layout-reverse .solo-uniview-content {
+    flex-flow: row-reverse;
+}
+
+.skin-holder-app.layout-column .solo-uniview-content {
+    flex-flow: column;
+}
+
+.skin-holder-app.layout-column.layout-reverse .solo-uniview-content {
+    flex-flow: column-reverse;
+}
+
+.panel {
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    position: relative;
+    border: 1px gray solid;
+}
+
+.solo-uniview-content {
+    flex-flow: row;
+    display: flex;
+    flex: 1 0;
+    position: relative;
+    padding: 0.5em;
+}
+
+.cortona3dsolo-aux-only .solo-uniview-content > .skin-split-pane,
+.cortona3dsolo-main-only .solo-uniview-content > .skin-split-pane,
+.cortona3dsolo-aux-only .main.panel,
+.cortona3dsolo-main-only .aux.panel {
+    display: none;
+}
+
+.main.panel {
+    order: -5;
+}
+
+.aux.panel,
+.main.panel {
+    display: flex;
+    flex-direction: column;
+    border-left: none;
+    border-right: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.aux.panel {
+    overflow: auto;
+    order: 5;
+}
+
+.aux.panel > .panel {
+    border: none;
+}
+
+.main.panel .panel-view {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.loading .panel,
+.loading .skin-split-pane {
+    display: none !important;
+}
+
+.skin-modal.help iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.skin-modal.help .skin-modal-panel {
+    height: 100%;
+    width: 100%;
+    max-width: 90%;
+}
+
+.skin-modal.help .skin-modal-content {
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.error p.message {
+    font-family: monospace;
+    font-size: 0.95em;
+    padding: 0.5em;
+    margin: 0;
+    background-color: linen;
+}
+
+mark[data-markjs] {
+    display: inline-block !important;
+}
+
+mark[data-markjs].current {
+    background-color: #ff751a;
+}
+
+/* Large desktops and laptops */
+
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+    .solo-uniview-content {
+        padding: 0.25em;
+    }
+}
+
+/* Landscape phones and smaller */
+
+@media (max-width: 480px) {
+}
+
+/* Portrait */
+
+@media (orientation: portrait) {
+    .solo-uniview-content {
+        flex-flow: column !important;
+    }
+
+    .layout-reverse .solo-uniview-content {
+        flex-flow: column-reverse !important;
+    }
+
+    .solo-uniview-content .panel {
+        flex-basis: 50%;
+    }
+}
