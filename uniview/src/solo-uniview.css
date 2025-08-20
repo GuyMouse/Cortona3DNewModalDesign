@@ -4,6 +4,11 @@ body {
 main {
     direction: rtl;
 }
+.aux.panel,
+.main.panel,
+.main-content {
+    border: 0;
+}
 label,
 .label-text {
     color: white;
@@ -11,14 +16,45 @@ label,
 .skin-holder span.skin-img-button {
     background-position: center;
 }
+.dpl-table {
+    background-color: #4c5259;
+}
 table td {
-    border-right: 1px solid grey !important;
+    /* border-right: 1px solid grey !important; */
 }
 .skin-toolbar {
     background: #20262d !important;
 }
 .skin-holder {
     overflow: unset;
+}
+#toolbar-part-selection {
+    z-index: 1;
+}
+.skin-toolbar#toolbar-part-selection:after,
+.skin-toolbar.main:not(#toolbar-part-selection):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        #577599 0%,
+        #577599 33.33%,
+        #6aa0e2 33.33%,
+        #6aa0e2 66.66%,
+        #ffe650 66.66%,
+        #ffe650 100%
+    );
+}
+#toolbar-part-selection:after {
+    top: 100% !important;
+}
+#toolbar-navigation:after {
+    top: 200% !important;
+    right: 101%;
 }
 #toolbar-part-selection,
 #toolbar-navigation {
@@ -30,7 +66,7 @@ table td {
     content: "";
     position: absolute;
     top: 0;
-    left: 101%;
+    right: 101%;
     width: 100%;
     height: 100%;
     background: #20262d;
@@ -46,7 +82,13 @@ table td {
     flex-flow: column;
     font-size: 14px;
 }
-
+.skin-split-pane.col {
+    background-color: #f2f2f2;
+    pointer-events: none;
+}
+.skin-split-pane.col > div.skin-split-pane-inner {
+    display: none;
+}
 .skin-holder-app.layout-reverse .solo-uniview-content {
     flex-flow: row-reverse;
 }

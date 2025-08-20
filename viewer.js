@@ -29,6 +29,9 @@
         let columnQTY = document.querySelector('td[data-column-id="QTY"]');
         let columnAPPLICABILITY = document.querySelector('td[data-column-id="APPLICABILITY"]');
         let columnINFO = document.querySelector('td[data-column-id="INFO"]');
+        let labelTransparency = document.querySelector('.right.skin-container:has(input[type="range"]) label');
+
+        labelTransparency.innerText = 'שקיפות:';
         columnItem.innerText = 'פריט';
         columnDESCR.innerText = 'תיאור';
         columnPARTNUMBER.innerText = 'מספר חלק';
