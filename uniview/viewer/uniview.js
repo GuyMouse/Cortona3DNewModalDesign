@@ -46,7 +46,7 @@
         })
         .then(function () {
             var view = solo.skin.get('view');
-            if(view) {
+            if (view) {
                 //return view.render('components/custom/framerate');
             }
         })

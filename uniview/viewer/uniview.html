@@ -36,7 +36,7 @@
         document.body.addEventListener('dragover', function (event) {
             event.preventDefault();
         })
-        
+
         document.body.addEventListener('drop', function (event) {
             var url = event.dataTransfer.getData("URL");
             if (!url && event.dataTransfer.files.length) {
