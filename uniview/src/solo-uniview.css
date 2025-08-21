@@ -1,5 +1,5 @@
 body {
-    font-family: "Assistant";
+    font-family: "Roboto", "Assistant";
 }
 main {
     direction: rtl;
@@ -9,19 +9,57 @@ main {
 .main-content {
     border: 0;
 }
+#toolbar-ipc,
+#toolbar-dpl {
+    padding: 0.5rem;
+}
+
 label,
 .label-text {
     color: white;
 }
 .skin-holder span.skin-img-button {
     background-position: center;
+    transition:
+        border 0.2s linear,
+        background-color 0.2s linear;
+    cursor: pointer;
+}
+.skin-holder span.skin-img-button:hover {
+    background-color: #424c59;
+}
+#toolbar-dpl > .left.skin-container {
+    gap: 10px;
+}
+.dpl-container {
+    height: 74%;
 }
 .dpl-table {
     background-color: #4c5259;
 }
-table td {
-    /* border-right: 1px solid grey !important; */
+.dpl-table pre {
+    font-family: sans-serif !important;
+    font-weight: 100 !important;
 }
+.dpl-table thead > tr:first-child td {
+    background: unset;
+    background-color: #4c5259;
+    color: #fff;
+}
+.right.skin-container {
+    gap: 15px;
+}
+.dpl-table td {
+    border-right: unset !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    padding: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: white !important;
+    border: 3px solid #8fb2f7 !important;
+}
+
 .skin-toolbar {
     background: #20262d !important;
 }

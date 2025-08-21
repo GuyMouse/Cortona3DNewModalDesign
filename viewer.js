@@ -20,27 +20,27 @@
         totalMemory: 64
     }).then(() => {
         console.log('✅ Model loaded');
-        let title = document.querySelector('.direction-column.left.skin-container .title');
-        let date = document.querySelector('.direction-column.right.skin-container > .mono.low.skin-text');
-        let pagehide = document.querySelector('.direction-column.left.skin-container > .mono.low');
-        let columnItem = document.querySelector('td[data-column-id="ITEM"]');
-        let columnDESCR = document.querySelector('td[data-column-id="DESCR"]');
-        let columnPARTNUMBER = document.querySelector('td[data-column-id="PARTNUMBER"]');
-        let columnQTY = document.querySelector('td[data-column-id="QTY"]');
-        let columnAPPLICABILITY = document.querySelector('td[data-column-id="APPLICABILITY"]');
-        let columnINFO = document.querySelector('td[data-column-id="INFO"]');
-        let labelTransparency = document.querySelector('.right.skin-container:has(input[type="range"]) label');
+        // let title = document.querySelector('.direction-column.left.skin-container .title');
+        // let date = document.querySelector('.direction-column.right.skin-container > .mono.low.skin-text');
+        // let pagehide = document.querySelector('.direction-column.left.skin-container > .mono.low');
+        // let columnItem = document.querySelector('td[data-column-id="ITEM"]');
+        // let columnDESCR = document.querySelector('td[data-column-id="DESCR"]');
+        // let columnPARTNUMBER = document.querySelector('td[data-column-id="PARTNUMBER"]');
+        // let columnQTY = document.querySelector('td[data-column-id="QTY"]');
+        // let columnAPPLICABILITY = document.querySelector('td[data-column-id="APPLICABILITY"]');
+        // let columnINFO = document.querySelector('td[data-column-id="INFO"]');
+        // let labelTransparency = document.querySelector('.right.skin-container:has(input[type="range"]) label');
 
-        labelTransparency.innerText = 'שקיפות:';
-        columnItem.innerText = 'פריט';
-        columnDESCR.innerText = 'תיאור';
-        columnPARTNUMBER.innerText = 'מספר חלק';
-        columnQTY.innerText = 'כמות';
-        columnAPPLICABILITY.innerText = 'התאמה';
-        columnINFO.innerText = 'מידע';
-        pagehide.innerHTML = '';
-        date.innerText = 'תאריך הפצה: 2025-08-20'
-        title.innerText = 'מודל דינמי'
+        // labelTransparency.innerText = 'שקיפות:';
+        // columnItem.innerText = 'פריט';
+        // columnDESCR.innerText = 'תיאור';
+        // columnPARTNUMBER.innerText = 'מספר חלק';
+        // columnQTY.innerText = 'כמות';
+        // columnAPPLICABILITY.innerText = 'התאמה';
+        // columnINFO.innerText = 'מידע';
+        // pagehide.innerHTML = '';
+        // date.innerText = 'תאריך הפצה: 2025-08-20';
+        // title.innerText = 'מודל דינמי';
         // console.log(title);
         // Modify toolbar styling
         // const toolbar = app.ui.find('.c3d-toolbar');
